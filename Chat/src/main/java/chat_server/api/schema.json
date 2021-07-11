@@ -1,0 +1,104 @@
+[
+  {
+    "action": "login",
+    "data": {
+      "mail": "mail@mIL.OM",
+      "password": "pass"
+    }
+  },
+  {
+    "action": "createUser",
+    "data": {
+      "firstname" : "Arina",
+      "lastname" : "Momot",
+      "mail": "mail@mIL.OM",
+      "password": "pass",
+      "country" : "Russia",
+      "birthday" : "06/10/2000",
+      "gender" : "female"
+    }
+  },
+  {
+    "action": "logout",
+    "token": "823982739857298375lweknflkwefn"
+  },
+  {
+    "action": "getMessages",
+    "token": "823982739857298375lweknflkwefn",
+    "data": {
+      "id": 986
+    }
+  },
+  {
+    "action": "getUsers",
+    "token": "823982739857298375lweknflkwefn",
+    "data": {
+      "firstname" : "Arina",
+      "lastname" : "Momot"
+    }
+  },
+  {
+    "action": "createGroup",
+    "token": "823982739857298375lweknflkwefn",
+    "data": {
+      "description" : "cvut fel",
+      "title" : "super group"
+    }
+  },
+  {
+    "action": "deleteGroup",
+    "token": "823982739857298375lweknflkwefn",
+    "data":  {
+      "id": 28934
+    }
+  },
+  {
+    "action": "deleteMessage",
+    "token": "823982739857298375lweknflkwefn",
+    "data": {
+      "id": 293,
+      "group_id": 976
+    }
+  },
+  {
+    "action": "editMessage",
+    "token": "823982739857298375lweknflkwefn",
+    "data" : {
+      "id": 20938,
+      "group_id":  309,
+      "text": "new edited message"
+    }
+  },
+  {
+    "action": "changeRights",
+    "token": "823982739857298375lweknflkwefn",
+    "data": {
+      "user_id": 20934,
+      "group_id": 902134,
+      "rights": "rwid"
+    }
+  },
+  {
+    "action": "sendMessage",
+    "token": "823982739857298375lweknflkwefn",
+    "data": {
+      "text": "hello",
+      "recipent": 28736
+    }
+  },
+  {
+    "action": "getGroups",
+    "token": "823982739857298375lweknflkwefn",
+    "data" : [
+      {"title":  "chat"}, {}
+    ]
+  },
+  {
+    "action": "addMember",
+    "token": "823982739857298375lweknflkwefn",
+    "data": {
+      "user_id": 657,
+      "group_id": 234
+    }
+  }
+]

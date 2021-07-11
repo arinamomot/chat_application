@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="chatik" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>chat_server.model.UserEntity</class>
+        <class>chat_server.model.GroupEntity</class>
+        <class>chat_server.model.MessageEntity</class>
+        <class>chat_server.model.MembershipEntity</class>
+        <class>chat_server.model.UsernameEntity</class>
+        <class>chat_server.model.AuthEntity</class>
+        <properties>
+            <property
+                    name="javax.persistence.jdbc.url"
+                    value="jdbc:postgresql://slon.felk.cvut.cz:5432/db20_momotari"/>
+            <property
+                    name="javax.persistence.jdbc.user"
+                    value="db20_momotari"/>
+            <property
+                    name="javax.persistence.jdbc.driver"
+                    value="org.postgresql.Driver"/>
+            <property
+                    name="javax.persistence.jdbc.password"
+                    value="Bj2CbJ"/>
+            <property
+                    name="javax.persistence.schema-generation.database.action"
+                    value="create"/>
+        </properties>
+    </persistence-unit>
+</persistence>

@@ -1,0 +1,86 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import java.lang.*?>-->
+<!--<?import java.util.*?>-->
+<!--<?import javafx.scene.*?>-->
+<!--<?import javafx.scene.control.*?>-->
+<!--<?import javafx.scene.layout.*?>-->
+
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import javafx.scene.*?>-->
+<!--<?import javafx.scene.control.*?>-->
+<!--<?import javafx.scene.layout.*?>-->
+<!--<?import javafx.scene.text.*?>-->
+
+<!--<Scene xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="chat_client.co.GroupInfo">-->
+<!--    <AnchorPane prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: #eef8ff;">-->
+<!--        <Text layoutX="75.0" layoutY="51.0" text="Title:" wrappingWidth="42.93554735183716">-->
+<!--            <font>-->
+<!--                <Font size="18.0"/>-->
+<!--            </font>-->
+<!--        </Text>-->
+<!--        <Text layoutX="136.0" layoutY="82.0" text="Description:" wrappingWidth="78.392578125">-->
+<!--            <font>-->
+<!--                <Font size="14.0"/>-->
+<!--            </font>-->
+<!--        </Text>-->
+<!--        <Text layoutX="85.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:">-->
+<!--            <font>-->
+<!--                <Font size="14.0"/>-->
+<!--            </font>-->
+<!--        </Text>-->
+<!--        <RadioButton fx:id="t_public" layoutX="138.0" layoutY="279.0" mnemonicParsing="false" text="Public">-->
+<!--            <cursor>-->
+<!--                <Cursor fx:constant="HAND"/>-->
+<!--            </cursor>-->
+<!--        </RadioButton>-->
+<!--        <RadioButton fx:id="t_private" layoutX="213.0" layoutY="279.0" mnemonicParsing="false" text="Private">-->
+<!--            <cursor>-->
+<!--                <Cursor fx:constant="HAND"/>-->
+<!--            </cursor>-->
+<!--        </RadioButton>-->
+<!--        <TextField fx:id="title" layoutX="128.0" layoutY="31.0" prefHeight="25.0" prefWidth="152.0">-->
+<!--            <cursor>-->
+<!--                <Cursor fx:constant="TEXT"/>-->
+<!--            </cursor>-->
+<!--        </TextField>-->
+<!--        <TextArea fx:id="description" layoutX="80.0" layoutY="86.0" prefHeight="117.0" prefWidth="191.0">-->
+<!--            <cursor>-->
+<!--                <Cursor fx:constant="TEXT"/>-->
+<!--            </cursor>-->
+<!--        </TextArea>-->
+<!--        <VBox layoutX="78.0" layoutY="326.0" prefHeight="174.0" prefWidth="196.0">-->
+<!--            <children>-->
+<!--                <ListView prefHeight="176.0" prefWidth="196.0"/>-->
+<!--            </children>-->
+<!--        </VBox>-->
+<!--        <Text layoutX="149.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Members:"/>-->
+<!--        <Text layoutX="84.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creator: ">-->
+<!--            <font>-->
+<!--                <Font size="14.0"/>-->
+<!--            </font>-->
+<!--        </Text>-->
+<!--        <Text fx:id="creator" layoutX="144.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text"-->
+<!--              wrappingWidth="94.00001525878906"/>-->
+<!--        <Text layoutX="84.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date created:">-->
+<!--            <font>-->
+<!--                <Font size="14.0"/>-->
+<!--            </font>-->
+<!--        </Text>-->
+<!--        <Text fx:id="dateCreated" layoutX="179.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text"-->
+<!--              wrappingWidth="78.13671875"/>-->
+<!--    </AnchorPane>-->
+<!--</Scene>-->
+
+
+
+
+
+
+
+
+
+
+

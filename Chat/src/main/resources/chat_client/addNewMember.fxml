@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Scene xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat_client.controller.AddNewMemberController">
+<AnchorPane prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: #eef8ff;">
+      <children>
+         <Button fx:id="searchButton" onMouseClicked="#searchButtonClick" layoutX="250.0" layoutY="39.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="69.0" text="Search" />
+          <VBox layoutX="32.0" layoutY="77.0" prefHeight="463.0" prefWidth="287.0" spacing="20" style="-fx-border-color: #2ca8ff">
+              <ListView fx:id="listOfUsers"  fixedCellSize="60" prefHeight="507.0" prefWidth="272.0">
+              </ListView>
+          </VBox>
+         <TextField fx:id="searchField" layoutX="32.0" layoutY="39.0" prefHeight="39.0" prefWidth="218.0" style="-fx-border-color: #2ca8ff" />
+      </children></AnchorPane>
+</Scene>

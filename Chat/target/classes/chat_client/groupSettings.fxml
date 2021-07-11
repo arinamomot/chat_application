@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat_client.controller.GroupSettingsController">
+    <AnchorPane prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: #eef8ff;">
+        <Text layoutX="75.0" layoutY="51.0" text="Title:" wrappingWidth="42.93554735183716">
+            <font>
+                <Font size="18.0" />
+            </font></Text>
+        <Text layoutX="136.0" layoutY="82.0" text="Description:" wrappingWidth="78.392578125">
+            <font>
+                <Font size="14.0" />
+            </font></Text>
+        <Text layoutX="85.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:">
+            <font>
+                <Font size="14.0" />
+            </font></Text>
+        <RadioButton fx:id="t_public" disable="true" layoutX="138.0" layoutY="279.0" mnemonicParsing="false" text="Public">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+        <RadioButton fx:id="t_private" disable="true" layoutX="213.0" layoutY="279.0" mnemonicParsing="false" text="Private">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
+      <TextField fx:id="title" layoutX="118.0" layoutY="31.0" prefHeight="25.0" prefWidth="171.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextArea fx:id="description" layoutX="59.0" layoutY="86.0" prefHeight="117.0" prefWidth="244.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextArea>
+      <Button fx:id="changeGroup" layoutX="258.0" layoutY="546.0" mnemonicParsing="false" onMouseClicked="#changeGroupClick" text="Change">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="toAddNewMember" layoutX="120.0" layoutY="508.0" mnemonicParsing="false" onMouseClicked="#gotoAddMembers" text="Add new member">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="deleteGroup" layoutX="24.0" layoutY="546.0" mnemonicParsing="false" onMouseClicked="#deleteGroupClick" text="Delete group">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <VBox layoutX="10.0" layoutY="326.0" prefHeight="174.0" prefWidth="333.0">
+         <children>
+            <ListView fx:id="members" onMouseClicked="#clickOnMember" prefHeight="174.0" prefWidth="279.0" />
+         </children>
+      </VBox>
+      <Text layoutX="149.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-color-label-visible: black" text="Members:" />
+      <Text layoutX="84.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creator: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="creator_name" layoutX="144.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" wrappingWidth="50" />
+        <Text fx:id="creator_lastname" layoutX="200.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" wrappingWidth="50" />
+        <Text layoutX="84.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date created:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="dateCreated" layoutX="179.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="78.13671875" />
+    </AnchorPane>
+</Scene>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+       fx:controller="chat_client.controller.ErrorWindowController">
+    <AnchorPane prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #eef8ff;">
+        <Text fx:id="error" layoutX="39.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              wrappingWidth="322.13670349121094">
+            <font>
+                <Font size="20.0"/>
+            </font>
+        </Text>
+        <Button fx:id="ok" layoutX="296.0" layoutY="136.0" mnemonicParsing="false" onMouseClicked="#okAction"
+                prefHeight="32.0" prefWidth="74.0"
+                style="-fx-border-color: #2ca8ff; -fx-border-radius: 3; -fx-background-color: #cff1ff" text="Ok"/>
+    </AnchorPane>
+</Scene>

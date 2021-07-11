@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Scene xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chat_client.controller.ProfileController">
+<AnchorPane prefHeight="600.0" prefWidth="350.0" style="-fx-background-color: #eef8ff;">
+        <Text fx:id="fname" layoutX="100.0" layoutY="100.0" text="Name" wrappingWidth="184.93554735183716">
+            <font>
+                <Font size="18.0" />
+            </font></Text>
+        <Text fx:id="lname" layoutX="180.0" layoutY="100.0" text="Last Name" wrappingWidth="184.93554735183716">
+            <font>
+                <Font size="18.0" />
+            </font></Text>
+        <Text layoutX="80.0" layoutY="382.0" text="Country:">
+            <font>
+                <Font size="14.0" />
+            </font></Text>
+        <Text layoutX="80.0" layoutY="324.0" text="Date of birth:">
+            <font>
+                <Font size="14.0" />
+            </font></Text>
+        <Text layoutX="100.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:">
+            <font>
+                <Font size="14.0" />
+            </font></Text>
+        <Text fx:id="country" layoutX="190.0" layoutY="382.0"/>
+        <Text fx:id="bd" layoutX="190.0" layoutY="324.0"/>
+        <RadioButton fx:id="male" layoutX="165.0" layoutY="160.0" mnemonicParsing="false" text="Male" disable="true" />
+        <RadioButton fx:id="female" layoutX="165.0" layoutY="190.0" mnemonicParsing="false" text="Female" disable="true" />
+    </AnchorPane>
+</Scene>

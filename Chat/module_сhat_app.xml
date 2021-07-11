@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_сhat_app" default="compile.module.сhat_app">
+  <dirname property="module.сhat_app.basedir" file="${ant.file.module_сhat_app}"/>
+  
+  <property name="module.jdk.home.сhat_app" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.сhat_app" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.сhat_app" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.сhat_app" value="-encoding UTF-8 -source 11 -target 1.11 ${compiler.args}"/>
+  
+  <property name="сhat_app.output.dir" value="${module.сhat_app.basedir}/target/classes"/>
+  <property name="сhat_app.testoutput.dir" value="${module.сhat_app.basedir}/target/test-classes"/>
+  
+  <path id="сhat_app.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="сhat_app.module.production.classpath">
+    <path refid="${module.jdk.classpath.сhat_app}"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.6.classpath"/>
+    <path refid="library.maven:_org.postgresql:postgresql:42.2.12.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.jpa:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:jakarta.persistence:2.2.3.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.asm:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.antlr:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.core:2.7.6.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.11.0.classpath"/>
+  </path>
+  
+  <path id="сhat_app.runtime.production.module.classpath">
+    <pathelement location="${сhat_app.output.dir}"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.6.classpath"/>
+    <path refid="library.maven:_org.postgresql:postgresql:42.2.12.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.jpa:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:jakarta.persistence:2.2.3.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.asm:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.antlr:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.core:2.7.6.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.11.0.classpath"/>
+  </path>
+  
+  <path id="сhat_app.module.classpath">
+    <path refid="${module.jdk.classpath.сhat_app}"/>
+    <pathelement location="${сhat_app.output.dir}"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.6.classpath"/>
+    <path refid="library.maven:_org.postgresql:postgresql:42.2.12.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.jpa:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:jakarta.persistence:2.2.3.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.asm:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.antlr:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.core:2.7.6.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.11.0.classpath"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter:5.7.0-m1.classpath"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter-api:5.7.0-m1.classpath"/>
+    <path refid="library.maven:_org.apiguardian:apiguardian-api:1.1.0.classpath"/>
+    <path refid="library.maven:_org.opentest4j:opentest4j:1.2.0.classpath"/>
+    <path refid="library.maven:_org.junit.platform:junit-platform-commons:1.7.0-m1.classpath"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter-params:5.7.0-m1.classpath"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter-engine:5.7.0-m1.classpath"/>
+    <path refid="library.maven:_org.junit.platform:junit-platform-engine:1.7.0-m1.classpath"/>
+    <path refid="library.maven:_junit:junit:4.12.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+  </path>
+  
+  <path id="сhat_app.runtime.module.classpath">
+    <pathelement location="${сhat_app.testoutput.dir}"/>
+    <pathelement location="${сhat_app.output.dir}"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.6.classpath"/>
+    <path refid="library.maven:_org.postgresql:postgresql:42.2.12.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.jpa:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:jakarta.persistence:2.2.3.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.asm:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.antlr:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:2.7.6.classpath"/>
+    <path refid="library.maven:_org.eclipse.persistence:org.eclipse.persistence.core:2.7.6.classpath"/>
+    <path refid="library.maven:_com.fasterxml.jackson.core:jackson-annotations:2.11.0.classpath"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter:5.7.0-m1.classpath"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter-api:5.7.0-m1.classpath"/>
+    <path refid="library.maven:_org.apiguardian:apiguardian-api:1.1.0.classpath"/>
+    <path refid="library.maven:_org.opentest4j:opentest4j:1.2.0.classpath"/>
+    <path refid="library.maven:_org.junit.platform:junit-platform-commons:1.7.0-m1.classpath"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter-params:5.7.0-m1.classpath"/>
+    <path refid="library.maven:_org.junit.jupiter:junit-jupiter-engine:5.7.0-m1.classpath"/>
+    <path refid="library.maven:_org.junit.platform:junit-platform-engine:1.7.0-m1.classpath"/>
+    <path refid="library.maven:_junit:junit:4.12.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.сhat_app">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.сhat_app">
+    <patternset refid="excluded.from.module.сhat_app"/>
+  </patternset>
+  
+  <path id="сhat_app.module.sourcepath">
+    <dirset dir="${module.сhat_app.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="сhat_app.module.test.sourcepath">
+    <dirset dir="${module.сhat_app.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.сhat_app" depends="compile.module.сhat_app.production,compile.module.сhat_app.tests" description="Compile module Сhat_App"/>
+  
+  <target name="compile.module.сhat_app.production" depends="register.custom.compilers" description="Compile module Сhat_App; production classes">
+    <mkdir dir="${сhat_app.output.dir}"/>
+    <javac2 destdir="${сhat_app.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.сhat_app}/javac">
+      <compilerarg line="${compiler.args.сhat_app}"/>
+      <bootclasspath refid="сhat_app.module.bootclasspath"/>
+      <classpath refid="сhat_app.module.production.classpath"/>
+      <src refid="сhat_app.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.сhat_app"/>
+    </javac2>
+    
+    <copy todir="${сhat_app.output.dir}">
+      <fileset dir="${module.сhat_app.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.сhat_app.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.сhat_app.tests" depends="register.custom.compilers,compile.module.сhat_app.production" description="compile module Сhat_App; test classes" unless="skip.tests">
+    <mkdir dir="${сhat_app.testoutput.dir}"/>
+    <javac2 destdir="${сhat_app.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.сhat_app}/javac">
+      <compilerarg line="${compiler.args.сhat_app}"/>
+      <bootclasspath refid="сhat_app.module.bootclasspath"/>
+      <classpath refid="сhat_app.module.classpath"/>
+      <src refid="сhat_app.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.сhat_app"/>
+    </javac2>
+    
+    <copy todir="${сhat_app.testoutput.dir}">
+      <fileset dir="${module.сhat_app.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.сhat_app" description="cleanup module">
+    <delete dir="${сhat_app.output.dir}"/>
+    <delete dir="${сhat_app.testoutput.dir}"/>
+  </target>
+</project>
