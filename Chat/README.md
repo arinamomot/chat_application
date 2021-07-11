@@ -1,5 +1,5 @@
 ## Chat app
-*Author:* [Arina Momot](https://gitlab.fel.cvut.cz/B192_B0B36PJV/momotari/-/wikis/Developer)
+*Author:* Arina Momot
 
 ---
 A small application which using JavaFX for a GUI chat application.
@@ -51,26 +51,3 @@ This messaging app supports every platform across desktop computers (macOS, Wind
 - Sending messages:... text and stickers.
 
 - View user information:..
-
----
-### [The author and developer of the project](https://gitlab.fel.cvut.cz/B192_B0B36PJV/momotari/-/wikis/Developer)
-A short information about the author of the project.
-***
-### [Project](https://gitlab.fel.cvut.cz/B192_B0B36PJV/momotari/-/tree/master)
-Here you can see the project: all folders, files and codes.
-***
-### [Changes](https://gitlab.fel.cvut.cz/B192_B0B36PJV/momotari/-/commits/master)
-Changes in the project (commits).
-***
-### JavaDoc
-(doc)
-***
-### User manual
-(doc)
-
-## Chat Application
-```java
-public class Main {
-
-}
-```
