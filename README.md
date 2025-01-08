@@ -22,7 +22,7 @@ The application is cross-platform and supports desktop computers running macOS, 
 - The project was built using the **Maven** framework for dependency management and project configuration.
 
 ### Database
-- Data about users, groups, and messages is stored in a database for persistence.
+- **Postgresql** - Data about users, groups, and messages is stored in a database for persistence.
 
 ### Architecture
 - Implemented using **client-server architecture**:
